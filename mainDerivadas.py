@@ -10,8 +10,8 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-
-"""EJERCICIO 1
+"""
+#EJERCICIO 1
 # Aqui va la funcion de la cual aproximaremos sus derivadas
 def f(x):
     return np.sin(x)  # Función ejemplo
@@ -21,7 +21,7 @@ def f(x):
 def df_analytical(x):
     return np.cos(x)  # Derivada analítica de f(x)
 """
-"""EJERCICIO 2
+"""#EJERCICIO 2
 # Aqui va la funcion de la cual aproximaremos sus derivadas
 def f(x):
     return np.exp(x)  # Función ejemplo
@@ -32,16 +32,7 @@ def df_analytical(x):
     return np.exp(x)  # Derivada analítica de f(x)
 """
 
-"""EJERCICIO 3
-# Aqui va la funcion de la cual aproximaremos sus derivadas
-def f(x):
-    return x**3-2*x**2+x  # Función ejemplo
-
-# Esta es la derivada analitica o exacta, se incluye con la
-# finalidad de comparar y medir errores
-def df_analytical(x):
-    return 3**2-4*x+1  # Derivada analítica de f(x)
-"""
+#EJERCICIO 3
 # Aqui va la funcion de la cual aproximaremos sus derivadas
 def f(x):
     return x**3-2*x**2+x  # Función ejemplo
@@ -51,7 +42,9 @@ def f(x):
 def df_analytical(x):
     return 3*x**2-4*x+1  # Derivada analítica de f(x)
 
-"""EJERCICIO 1
+
+
+"""#EJERCICIO 1
 # Metodo diferencias hacia adelante
 def forward_diff(f, x, h=0.1):
     return (f(x + h) - f(x)) / h
@@ -64,7 +57,7 @@ def backward_diff(f, x, h=0.1):
 def central_diff(f, x, h=0.1):
     return (f(x + h) - f(x - h)) / (2*h)
 """
-""""EJERCICIO 2
+"""#EJERCICIO 2
 def forward_diff(f, x, h=0.05):
     return (f(x + h) - f(x)) / h
 
@@ -77,7 +70,7 @@ def central_diff(f, x, h=0.05):
     return (f(x + h) - f(x - h)) / (2*h)
 """
 
-"""EJERCICIO 3
+#EJERCICIO 3
 # Metodo diferencias hacia adelante
 def forward_diff(f, x, h=0.2):
     return (f(x + h) - f(x)) / h
@@ -89,41 +82,28 @@ def backward_diff(f, x, h=0.2):
 # Metodo diferencias centradas
 def central_diff(f, x, h=0.2):
     return (f(x + h) - f(x - h)) / (2*h)
+
 """
-# Metodo diferencias hacia adelante
-def forward_diff(f, x, h=0.2):
-    return (f(x + h) - f(x)) / h
-
-# Metodo diferencias hacia atras
-def backward_diff(f, x, h=0.2):
-    return (f(x) - f(x - h)) / h
-
-# Metodo diferencias centradas
-def central_diff(f, x, h=0.2):
-    return (f(x + h) - f(x - h)) / (2*h)
-
-"""EJERCICIO #1 
+#EJERCICIO #1 
 # Rango de valores para evaluar
 # Definimos un intervalo
 a = 0.0
 b = np.pi  
 """
-"""EJERCICIO #2
+"""
+#EJERCICIO #2
 # Rango de valores para evaluar
 # Definimos un intervalo
 a = 0.0
 b = 2.0
 """
-"""EJERCICIO #3
+#EJERCICIO #3
 # Rango de valores para evaluar
 # Definimos un intervalo
 a = -1.0
 b = 2.0
-"""
-# Rango de valores para evaluar
-# Definimos un intervalo
-a = -1.0
-b = 2.0
+
+
 x_vals = np.linspace(a, b, 100)
 df_exact = df_analytical(x_vals)
 
